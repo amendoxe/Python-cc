@@ -8,3 +8,4 @@ while True:
         break
     else:
         print(f"\n\t I would love to visit {message.title()}\n")
+print("Thank you for using this program")
