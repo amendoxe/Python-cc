@@ -8,8 +8,8 @@ def make_album(band_name, disc_title, tracks=None):
     album = {"name": band_name, "album": disc_title}
     if tracks:
         album["number of tracks"] = tracks
-    albums.append(f"album{list_size}")
-    print(album)
+    albums.append(album)
+    print(f"This is the last album you recorded \n {album}\n")
     return list_size
 
 
@@ -17,8 +17,10 @@ while True:
     name = input("Escribe el nombre de la banda: ")
     title = input("Escribe el nombre del disco: ")
     track = input("Numero de canciones, pulsa enter para omitir: ")
-    continuing = input("q to quit: ")
     make_album(name, title, track)
-    print(albums)
-    if continuing == "q":
+    print("This are all the albums you have recorded so far:\n")
+    for album in albums:
+        print(album)
+    continuing = input("Continue?: y/n ")
+    if continuing == "n":
         break
