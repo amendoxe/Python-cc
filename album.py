@@ -16,9 +16,9 @@ def make_album(band_name, disc_title, tracks=None):
 while True:
     name = input("Escribe el nombre de la banda: ")
     title = input("Escribe el nombre del disco: ")
-    tracks = input("Numero de canciones, pulsa enter para omitir: ")
+    track = input("Numero de canciones, pulsa enter para omitir: ")
     continuing = input("q to quit: ")
-    make_album(name, title, tracks)
+    make_album(name, title, track)
     print(albums)
     if continuing == "q":
         break
