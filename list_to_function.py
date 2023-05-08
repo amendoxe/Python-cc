@@ -4,7 +4,8 @@
 def greeting(names):
     """Print a greeting"""
     for name in names:
-        print(f"Hello, {name.title()}")
+        message = f"Hello, {name.title()}"
+        print(message)
 
 
 names = ["jimmy", "timmy", "tyou"]
