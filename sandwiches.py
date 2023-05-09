@@ -12,3 +12,6 @@ def make_sandwiches(bread_type, *ingredients):
 
 
 make_sandwiches("integral", "jamón", "frijoles", "queso amarillo")
+make_sandwiches("Blank", "tomato", "pickles", "chicken")
+make_sandwiches("garlic", "tomato", "anchovies", "olives", "lettuce")
+make_sandwiches("garlic", "lettuce")
