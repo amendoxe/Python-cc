@@ -1,13 +1,31 @@
 """ alimentos que se pueden combinar para evitar picos de glucosa """
-food_groups = {"fibras": ["brocoli", "apio", "pimiento", "pepino",
-                          "tomate", "zanahoria"],
-               "proteinas": ["frijoles", "chicharo",
-                             "proteina de chicharo", "nueces",
-                             "almendra", "yogurt griego"],
-               "grasas": ["yogurt griego", "crema de nuez",
-                          "crema de almendra", "aceite de oliva",
-                          "hummus", "aguacate"]
-               }
+food_groups = {
+    "fibras": [
+        "brocoli",
+        "apio",
+        "pimiento",
+        "pepino",
+        "tomate",
+        "zanahoria",
+        "perejil",
+    ],
+    "proteinas": [
+        "frijoles",
+        "chicharo",
+        "proteina de chicharo",
+        "nueces",
+        "almendra",
+        "yogurt griego",
+    ],
+    "grasas": [
+        "yogurt griego",
+        "crema de nuez",
+        "crema de almendra",
+        "aceite de oliva",
+        "hummus",
+        "aguacate",
+    ],
+}
 
 fibras = food_groups["fibras"]
 proteinas = food_groups["proteinas"]
@@ -51,8 +69,7 @@ def comparaciones(food_groupss, alimento_actuals):
 while True:
     GLOBAL_EN_LISTA = None
     print("escribe 'q' para salir ")
-    alimento_actual = input(
-        "Que alimento deseas consumir?\n:")
+    alimento_actual = input("Que alimento deseas consumir?\n:")
     if alimento_actual == "q":
         break
 
