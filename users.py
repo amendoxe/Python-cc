@@ -1,10 +1,13 @@
-""" self.first_name, last_name and several other attributes for profile. describe_user(), greet_user(), Create several instances representing different users, call the methods"""
+""" self.first_name, last_name and several other attributes for profile.
+describe_user(), greet_user(), Create several instances representing
+ different users, call the methods"""
 
 
 class User:
     """ Define user """
 
-    def __init__(self, first_name, last_name, location, favorite_food, occupation="student"):
+    def __init__(self, first_name, last_name, location,
+                 favorite_food, occupation="student"):
         self.first_name = first_name
         self.last_name = last_name
         self.location = location

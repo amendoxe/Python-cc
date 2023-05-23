@@ -22,14 +22,11 @@ class Restaurant:
 
 
 my_restaurant = Restaurant("Luigi's", "Italian")
-print(my_restaurant.name)
-print(my_restaurant.cuisine_type)
-my_restaurant.describe_restaurant()
-my_restaurant.open_restaurant()
-
-
 my_other_restaurant = Restaurant("Haro's", "Bakery")
 my_another_restaurant = Restaurant("El picante", "Mexican")
+""" calling the methods """
+my_restaurant.describe_restaurant()
+my_restaurant.open_restaurant()
 
 my_another_restaurant.describe_restaurant()
 my_another_restaurant.open_restaurant()
