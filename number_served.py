@@ -46,7 +46,7 @@ my_first_restaurant = Restaurant("luigis's", "mexican")
 directly """
 my_first_restaurant.number_served = 10
 my_first_restaurant.show_number_served()
-# by mehtod
+# by method
 my_first_restaurant.modify_number_served(12)
 my_first_restaurant.show_number_served()
 # by increment method
