@@ -1,8 +1,7 @@
 """ Starting with the restauran.py exercise add attribute number_served = 0
 , create an instance from this class, print the number of customers the
 restaurant has served, change the value and print it again.
-
-9-5 Add attribute calle  """
+"""
 
 
 class Restaurant:
