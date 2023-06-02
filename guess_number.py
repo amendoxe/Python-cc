@@ -6,17 +6,19 @@ import sys
 number_iam_thinking = random.randint(1, 100)
 
 while True:
-    print("\nwhich number am I thinking of(1-100)? "
-          "\n type 'q' to quit")
+    print("\nWhich number am I thinking of (1-100)? "
+          "\n Type 'q' to quit")
     user_input = input(": ")
+
     if user_input == "q":
         break
     try:
-        if int(user_input) > number_iam_thinking:
+        guess = int(user_input)
+        if guess > number_iam_thinking:
             print("too high")
-        elif int(user_input) < number_iam_thinking:
+        elif guess < number_iam_thinking:
             print("too low")
-        elif int(user_input) == number_iam_thinking:
+        else:
             print("Congratulations, you guessed it!,"
                   f"the number is {number_iam_thinking}")
             sys.exit()
