@@ -1,4 +1,4 @@
-# rock, paper, scissors game
+""" rock, paper, scissors game """
 import random
 
 win_times = 0
@@ -55,7 +55,6 @@ def comparing_hands(win_times, lose_times, tie_times, random_pick, user_pick):
 while True:
 
     random_pick = generating_random_pick()
-    message = ""
     print(
         f"\nThe score: wins({win_times}), loses({lose_times}),"
         f"draws({tie_times})")
