@@ -12,14 +12,14 @@ try:
     while True:
         print(" " * espacio, end="")
         print("********")
-        time.sleep()
-        if incrementa_espacio == True:
+        time.sleep(0.3)
+        if incrementa_espacio is True:
             espacio += 1
-            if espacio == 12
-            incrementa_espacio = False
+            if espacio == 12:
+                incrementa_espacio = False
         else:
-            espacio -=1
+            espacio -= 1
             if espacio == 0:
-                incrementa_espacio = true
-exception KeyboardInterrupt:
-sys.exit()
+                incrementa_espacio = True
+except KeyboardInterrupt:
+    sys.exit()
